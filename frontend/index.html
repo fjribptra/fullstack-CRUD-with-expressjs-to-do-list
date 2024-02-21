@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list frontend</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button-wrapper {
+        background-color: slateblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    li{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        border: 1px solid black;
+        padding: .5em 1em;
+        gap: 10px;
+    }
+</style>
+<h1>My List</h1>
+<p id="notification" style="color: green;"></p>
+<div class="input-wrapper">
+        <input id="list" name="list" type="text">
+        <input id="done" name="done" type="text" value="false" >
+        <button onclick="addItem()">Submit</button>
+</div>
+<div class="list-wrapper">
+    <p></p>
+</div>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
